@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root{
+    --primary-color: #0f1a2c;
+    --secondary-color: #f6ac0f;
+    --text-dark: #0f172a;
+    --text-light: #64748b;
+    --extra-light: #f8fafc;
+    --white: #ffffff;
+    --max-width: 1200px;
+    --header-font: "Playfair Display", serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.section_container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+}
+.section_subheader {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+.section_header {
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: var(--header-font);
+    color: var(--text-dark);
+}
+.section_description {
+    margin-top: 1rem;
+    color: var(--text-light);
+}
+html,
+body {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+.menu {
+    background-color: var(--extra-light);
+}
+.menu_header {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.menu_items {
+    list-style: none;
+    margin-block: 4rem;
+    display: grid;
+    gap: 1rem 4rem;
+}
+.menu_items li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.menu_items li:hover {
+    background-color: var(--primary-color);
+}
+.menu_items img {
+    max-width: 100px;
+    border-radius: 2px;
+}
+.menu_items h4 {
+    margin-bottom: 5rem;
+    font-size: 1.25rem;
+    font-weight: 800;
+    font-family: var(--header-font);
+    transition: 0.3s;
+}
+.menu_items p {
+    max-width: 400px;
+    color: var(--text-light);
+    transition: 0.3s;
+}
+.menu_items li:hover :is(h4, p) {
+    color: var(--white);
+}
+.menu_images {
+    margin-bottom: 4rem;
+    display: grid;
+    gap: 1rem;
+}
+.menu_images img {
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+.menu_banner {
+    list-style: none;
+    padding: 4rem 2rem;
+    display: grid;
+    gap: 2rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+.menu_banner span {
+    font-size: 3.5rem;
+    color: var(--secondary-color);
+}
+.menu_banner h4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--white);
+}
+.menu_banner p {
+    color: var(--text-light);
+}
+
+@media (width > 480px) {
+    .menu_images {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .menu_banner {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (width > 760px) {
+    .menu_header {
+        flex-direction: row;
+    }
+    .menu_items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .menu_images {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .menu_banner {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (width > 1024px) {
+    .menu_images {
+        gap: 2rem;
+    }
+}
+    </style>
+</head>
+<body>
+    
+    <section class="menu" id="menu">
+        <div class="section_container menu_container">
+            <div class="menu_header">
+                <div>
+                    <p class="section_subheader">MENU</p>
+                    <h2 class="section_header">Our Food Menu</h2>
+                </div>
+            </div>
+            <ul class="menu_items">
+                <li>
+                    <img src="images/menu-1.jpg" alt="menu">
+                    <div class="meu-details">
+                        <h4>Eggs & Bacon</h4>
+                        <p>
+                            It is a culinary innovation that puts a unique spin on 
+                            the beloved breakfast combination.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/menu-2.jpg" alt="menu">
+                    <div class="meu-details">
+                        <h4>Tea or Coffee</h4>
+                        <p>
+                            A classic choice for your daily dose of comfort and calmness.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/menu-3.jpg" alt="menu">
+                    <div class="meu-details">
+                        <h4>Chia Oatmeal</h4>
+                        <p>
+                            Our Chia Oatmeal is a wholesome nutrient-packed breakfast.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/menu-4.jpg" alt="menu">
+                    <div class="meu-details">
+                        <h4>Fruit Parfait</h4>
+                        <p>
+                            Our Fruit Parfait is a delightful culinary masterpiece
+                            freshness and flavor.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/menu-5.jpg" alt="menu">
+                    <div class="meu-details">
+                        <h4>Marmalade Selection</h4>
+                        <p>
+                            Our Marmalade Selection is a delectable medley of vibrant
+                            handcrafted citrus preserves.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/menu-6.jpg" alt="menu">
+                    <div class="meu-details">
+                        <h4>Cheese Plate</h4>
+                        <p>
+                            Our Cheese Plate is a masterpiece that celebrates rich and
+                            diverse world of cheeses.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <div class="menu_images">
+                <img src="images/menu-7.jpg" alt="menu">
+                <img src="images/menu-8.jpg" alt="menu">
+                <img src="images/menu-9.jpg" alt="menu">
+            </div>
+            <ul class="menu_banner">
+                <li>
+                    <span><i class="ri-file-text-line"></i></span>
+                    <h4>84K</h4>
+                    <p>Projects are Completed</p>
+                </li>
+                <li>
+                    <span><i class="ri-user-line"></i></span>
+                    <h4>10M</h4>
+                    <p>Active Around World</p>
+                </li>
+                <li>
+                    <span><i class="ri-function-line"></i></span>
+                    <h4>02K</h4>
+                    <p>Categories Served</p>
+                </li>
+                <li>
+                    <span><i class="ri-lightbulb-flash-line"></i></span>
+                    <h4>100M</h4>
+                    <p>Ideas Raised Funds</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="js/script8.js"></script>
+</body>
+</html>

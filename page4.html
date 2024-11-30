@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <title>Splendide Hotel</title>
+    <link rel="stylesheet" href="css/style4.css">
+</head>
+<body>
+    <nav>
+        <div class="nav_bar">
+            <div class="nav_header">
+                <div class="logo nav_logo">
+                    <div><img src="images/gallery-1.png" alt="logo"></div>
+                </div>
+                <div class="nav_menu_btn" id="menu-btn">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+            <ul class="nav_links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#room">Rooms</a></li>
+                <li><a href="#feature">Features</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header" id="home">
+        <div class="section_container header_container">
+            <p class="section_subheader">SPEND YOUR HOLIDAY</p>
+            <h1>Welcome To<br/>Splendide Hotel</h1>
+        </div>
+    </header>
+
+    <section class="booking" id="booking">
+        <div class="section_container booking_container">
+            <form action="/" id="bookingForm">
+                <div class="input_group">
+                    <label for="arrival">Arrival Date</label>
+                    <input type="date" placeholder="Your Arrival Date">
+                </div>
+                <div class="input_group">
+                    <label for="departure">Departure Date</label>
+                    <input type="date" placeholder="Your Departure Date">
+                </div>
+                <div class="input_group">
+                    <label for="adult">Adults</label>
+                    <input type="number" placeholder="Adults">
+                </div>
+                <div class="input_group">
+                    <label for="child">Children</label>
+                    <input type="number" placeholder="Children">
+                </div>
+                <div>
+                    <button type="submit" class="btn" onclick="openPoppup(event)">Book Now</button>
+                    <div class="poppup" id="poppup">
+                        <img src="images/success.jpeg" alt="image">
+                        <h2>Thank You !</h2>
+                        <p>Your booking has been successfully submitted!</p>
+                        <button type="button" onclick="closePoppup()">OK</button>
+                    </div>
+                </div>
+            </form>
+            <div class="image">
+                <img src="images/books1.jpg" alt="image">
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="head">
+            <p class="section_subheader">SERVICES</p>
+            <h2 class="section_header">Here Are Our Services</h2>
+        </div>
+        <div class="about_grid">
+            <div class="about_card">
+                <a href="page8.html"><img src="images/restaur.jpeg" alt="about"></a>
+                <div class="about_card_details">
+                    <div>
+                        <h4>Restaurant</h4>
+                        <p>The restaurant is a fine dining establishment where guests are greeted by an elegant facade.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about_card">
+                <a href="page9.html"><img src="images/music.jpeg" alt="about"></a>
+                <div class="about_card_details">
+                    <div>
+                        <h4>Cultural Activities</h4>
+                        <p>We provide a rich cultural activities to engage guests and enhance their overall experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about_card">
+                <a href="page10.html"><img src="images/sport1.jpeg" alt="about"></a>
+                <div class="about_card_details">
+                    <div>
+                        <h4>Sport Room</h4>
+                        <p>Here is the sport place managed for clients to enjoy themselves and spend their days in good health.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about_card">
+                <a href="page11.html"><img src="images/transport.jpeg" alt="about"></a>
+                <div class="about_card_details">
+                    <div>
+                        <h4>Transportation</h4>
+                        <p>This include shuttle service to and from the airport or other local destinations and provide also car rental services.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about_card">
+                <a href="page12.html"><img src="images/medical.jpeg" alt="about"></a>
+                <div class="about_card_details">
+                    <div>
+                        <h4>Medical Services</h4>
+                        <p>We provide a range of medical services to ensure the health and safety of our guests.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about_card">
+                <a href="page13.html"><img src="images/laundry.jpeg" alt="about"></a>
+                <div class="about_card_details">
+                    <div>
+                        <h4>Laundry and Dry Cleaning</h4>
+                        <p>We offer laundry and dry-cleaning services to ensure guests have clean clothing throughout their stay.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="room_container" id="room">
+        <p class="section_subheader">ROOMS</p>
+        <h2 class="section_header">Hand Picked Rooms</h2>
+        <div class="room_grid">
+            <div class="room_card">
+                <img src="images/rom1.jpeg" alt="room">
+                <div class="room_card_details">
+                    <div>
+                        <h4>Luxury Penthouse</h4>
+                        <p>Top-tier accommodations usually on the highest floors of a hotel.</p>
+                    </div>
+                    <h3>$399<span>/night</span></h3>
+                </div>
+            </div>
+            <div class="room_card">
+                <img src="images/rom3.jpeg" alt="room">
+                <div class="room_card_details">
+                    <div>
+                        <h4>Garden Villa</h4>
+                        <p>Charming villa offering a private terrace with garden views.</p>
+                    </div>
+                    <h3>$499<span>/night</span></h3>
+                </div>
+            </div>
+            <div class="room_card">
+                <img src="images/rom4.jpeg" alt="room">
+                <div class="room_card_details">
+                    <div>
+                        <h4>Family Suite</h4>
+                        <p>Consist of multiple rooms and a common area where life is beautiful.</p>
+                    </div>
+                    <h3>$599<span>/night</span></h3>
+                </div>
+            </div>
+            <div class="room_card">
+                <img src="images/rom5.jpeg" alt="room">
+                <div class="room_card_details">
+                    <div>
+                        <h4>Sky Suite</h4>
+                        <p>Luxurious suite with a private balcony offering breathtaking views.</p>
+                    </div>
+                    <h3>$799<span>/night</span></h3>
+                </div>
+            </div>
+            <div class="room_card">
+                <img src="images/room-1.jpg" alt="room">
+                <div class="room_card_details">
+                    <div>
+                        <h4>Deluxe Suite</h4>
+                        <p>Well-appointed rooms designed for guests who desire a more.</p>
+                    </div>
+                    <h3>$899<span>/night</span></h3>
+                </div>
+            </div>
+            <div class="room_card">
+                <img src="images/room-4.jpg" alt="room">
+                <div class="room_card_details">
+                    <div>
+                        <h4>Executive Suite</h4>
+                        <p>Spacious suite with panoramic city views, a stylish living area.</p>
+                    </div>
+                    <h3>$999<span>/night</span></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section_container feature_container" id="feature">
+        <p class="section_subheader">FACILITIES</p>
+        <h2 class="section_header">Core Features</h2>
+        <div class="feature_grid">
+            <div class="feature_card">
+                <span><i class="ri-thumb-up-line"></i></span>
+                <h4>Have High Rating</h4>
+                <p>
+                    We take pride in curating a selection of hotels that consistently
+                    receive high ratings and positive reviews.
+                </p>
+            </div>
+            <div class="feature_card">
+                <span><i class="ri-time-line"></i></span>
+                <h4>Quite Hours</h4>
+                <p>
+                     We understand that peace and uninterrupted rest are essential for a
+                     rejuvenating experience.
+                </p>
+            </div>
+            <div class="feature_card">
+                <span><i class="ri-map-pin-line"></i></span>
+                <h4>Best Location</h4>
+                <p>
+                    At our hotels booking website, we take pride in offering
+                    accommodations in the most prime and sought-after locations.
+                </p>
+            </div>
+            <div class="feature_card">
+                <span><i class="ri-close-circle-line"></i></span>
+                <h4>Free Cancellation</h4>
+                <p>
+                    We understand that travel plans can change unexpectedly, which is
+                    why we offer the flexibility of free cancellation.
+                </p>
+            </div>
+            <div class="feature_card">
+                <span><i class="ri-wallet-line"></i></span>
+                <h4>Payment Options</h4>
+                <p>
+                    Our hotels booking website offers a range of convenient Payment
+                    options to suit your preferences mainly at the hotel.
+                </p>
+            </div>
+            <div class="feature_card">
+                <span><i class="ri-coupon-line"></i></span>
+                <h4>Special Offers</h4>
+                <p>
+                    Whether you're planning a romantic getaway, or a business trip, our carefully
+                     curated special offers cater to all your needs.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer" id="contact">
+        <div class="section_container footer_container">
+            <div class="footer-col">
+                <div class="logo footer_logo">
+                    <div><img src="images/gallery-1.png" alt="logo"></div>
+                </div>
+                <p class="section_description">
+                    Popular hotel booking sites include Booking.com, Expedia, Hotels.com, and Airbnb, each offering a wide range of accommodation options and additional features tailored to enhance the user experience.
+                </p>
+                <ul class="footer_socials">
+                    <li><a href="#"><i class="ri-youtube-fill"></i></a></li>
+                    <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+                    <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+                    <li><a href="#"><i class="ri-linkedin-fill"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h4>Services</h4>
+                <div class="footer_links">
+                    <li><a href="#">Online Booking</a></li>
+                    <li><a href="#">Room Customization</a></li>
+                    <li><a href="#">Virtual Tours</a></li>
+                    <li><a href="#">Special Offers</a></li>
+                    <li><a href="#">Concierge Services</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                </div>
+            </div>
+            <div class="footer_col">
+                <h4>Contact Us</h4>
+                <div class="footer_links">
+                    <li>
+                        <span><i class="ri-phone-fill"></i></span>
+                        <div>
+                            <h5>Phone Number</h5>
+                            <p>+226 25 25 25 89</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span><i class="ri-record-mail-line"></i></span>
+                        <div>
+                            <h5>Email</h5>
+                            <p>info@hotelsbooking.com</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span><i class="ri-map-pin-2-line"></i></span>
+                        <div>
+                            <h5>Location</h5>
+                            <p>First St. NYC</p>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bar">
+            Copyright @ 2024 web Design. All rights reserved.
+        </div>
+    </footer>
+
+
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <title>Hotels Booking Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav_bar">
+            <div class="nav_header">
+                <div class="logo nav_logo">
+                    <div><img src="images/logo.png" alt="logo"></div>
+                </div>
+                <div class="nav_menu_btn" id="menu-btn">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+            <ul class="nav_links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#room">Rooms</a></li>
+                <li><a href="#feature">Features</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#hotel">Hotels</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header" id="home">
+        <div class="section_container header_container">
+            <p class="section_subheader">ABOUT US</p>
+            <h1>The Perfect<br/>Base For You</h1>
+        </div>
+    </header>
+
+    <section class="booking" id="booking">
+        <div class="section_container booking_container">
+            <form action="/" id="bookingForm">
+                <div class="input_group">
+                    <label for="arrival" id="arrival">Arrival Date</label>
+                    <input type="date" placeholder="Your Arrival Date">
+                </div>
+                <div class="input_group">
+                    <label for="departure" id="departure">Departure Date</label>
+                    <input type="date" placeholder="Your Departure Date">
+                </div>
+                <div class="input_group">
+                    <label for="adult" id="adult">Adults</label>
+                    <input type="number" placeholder="Adults">
+                </div>
+                <div class="input_group">
+                    <label for="child" id="child">Children</label>
+                    <input type="number" placeholder="Children">
+                </div>
+                <div>
+                    <button type="submit" class="btn" onclick="openPoppup(event)">Book Now</button>
+                    <div class="poppup" id="poppup">
+                      <img src="images/success.jpeg" alt="image">
+                      <h2>Thank You!</h2>
+                      <p>Your booking has been successfully submitted. Pick a hotel below and book there again!</p>
+                      <button type="button" onclick="closePoppup()">OK</button>
+                    </div>
+                </div>
+            </form>
+            <div class="image">
+                <img src="images/log.jpg" alt="image">
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="section_container about_container" >
+            <div class="about_grid">
+                <div class="about_image">
+                    <img src="images/team1.jpg" alt="about">
+                </div>
+                <div class="about_card">
+                    <span><i class="ri-user-line"></i></span>
+                    <h4>Strong Team</h4>
+                    <p>
+                        Unlocking Hospitality Excellence And Ensures Your Perfect Stay 
+                    </p>
+                </div>
+                <div class="about_image">
+                    <img src="images/about-2.jpg" alt="about">
+                </div>
+                <div class="about_card">
+                    <span><i class="ri-calendar-check-line"></i></span>
+                    <h4>Luxury Room</h4>
+                    <p>
+                        Experience Unrivaled Luxury at Our Exquisite Luxury Rooms 
+                    </p>
+                </div>
+            </div>
+            <div class="about_content">
+                <img src="images/underground.jpeg" alt="about" class="underground">
+                <h2 class="section_header">Discover Our Underground</h2>
+                <p class="section_description">
+                    Welcome to a hidden realm of extraordinary accommodations
+                    luxury, comfort and avendture converge. Our Underground
+                    offer an unparalleled escape from the ordinary, inviting,
+                    explore a subterranean world of wonders.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="room_container" id="room">
+        <p class="section_subheader">ROOMS</p>
+        <h2 class="section_header">Hand Picked Rooms</h2>
+        <div class="room_grid">
+            <div class="room_card">
+                <img src="images/room-3.jpg" alt="room">
+                <div class="room_card_details">
+                    <div>
+                        <h4>Luxury Penthouse</h4>
+                        <p>Top-tier accommodations usually on the highest floors of a hotel.</p>
+                    </div>
+                    <h3>$399<span>/night</span></h3>
+                </div>
+            </div>
+            <div class="room_card">
+                <img src="images/room-6.jpg" alt="room">
+                <div class="room_card_details">
+                    <div>
+                        <h4>Garden Villa</h4>
+                        <p>Charming villa offering a private terrace with garden views.</p>
+                    </div>
+                    <h3>$499<span>/night</span></h3>
+                </div>
+            </div>
+            <div class="room_card">
+                <img src="images/room-2.jpg" alt="room">
+                <div class="room_card_details">
+                    <div>
+                        <h4>Family Suite</h4>
+                        <p>Consist of multiple rooms and a common area where life is beautiful.</p>
+                    </div>
+                    <h3>$599<span>/night</span></h3>
+                </div>
+            </div>
+            <div class="room_card">
+                <img src="images/room-5.jpg" alt="room">
+                <div class="room_card_details">
+                    <div>
+                        <h4>Sky Suite</h4>
+                        <p>Luxurious suite with a private balcony offering breathtaking views.</p>
+                    </div>
+                    <h3>$799<span>/night</span></h3>
+                </div>
+            </div>
+            <div class="room_card">
+                <img src="images/room-1.jpg" alt="room">
+                <div class="room_card_details">
+                    <div>
+                        <h4>Deluxe Suite</h4>
+                        <p>Well-appointed rooms designed for guests who desire a more.</p>
+                    </div>
+                    <h3>$899<span>/night</span></h3>
+                </div>
+            </div>
+            <div class="room_card">
+                <img src="images/room-4.jpg" alt="room">
+                <div class="room_card_details">
+                    <div>
+                        <h4>Executive Suite</h4>
+                        <p>Spacious suite with panoramic city views, a stylish living area.</p>
+                    </div>
+                    <h3>$999<span>/night</span></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="intro">
+        <div class="section_container intro_container">
+            <div class="intro_content">
+                <p class="section_subheader">INTRO VIDEO</p>
+                <h2 class="section_header">Meet Our Luxury Place</h2>
+                <p class="section_description">
+                    Whether you're seeking a cozy and exclusive hideway or an immersive
+                    journey beneath the surface, Hotels promise to an
+                    unforgettable stay, where the depths of comfort and excitement await
+                    your arrival. 
+                </p>
+                <div>
+                    <button type="submit" class="btn" onclick="openPoppup1(event)">Book Now</button>
+                    <div class="poppup1" id="poppup1">
+                      <img src="images/success.jpeg" alt="image">
+                      <h2>Thank You!</h2>
+                      <p>Your room has been successfully booked!</p>
+                      <button type="button" onclick="closePoppup1()">OK</button>
+                    </div>
+                </div>
+            </div>
+            <div class="intro_video">
+                <video src="images/luxury.mp4" autoplay muted loop></video>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_container feature_container" id="feature">
+        <p class="section_subheader">FACILITIES</p>
+        <h2 class="section_header">Core Features</h2>
+        <div class="feature_grid">
+            <div class="feature_card">
+                <span><i class="ri-thumb-up-line"></i></span>
+                <h4>Have High Rating</h4>
+                <p>
+                    We take pride in curating a selection of hotels that consistently
+                    receive high ratings and positive reviews.
+                </p>
+            </div>
+            <div class="feature_card">
+                <span><i class="ri-time-line"></i></span>
+                <h4>Quite Hours</h4>
+                <p>
+                     We understand that peace and uninterrupted rest are essential for a
+                     rejuvenating experience.
+                </p>
+            </div>
+            <div class="feature_card">
+                <span><i class="ri-map-pin-line"></i></span>
+                <h4>Best Location</h4>
+                <p>
+                    At our hotels booking website, we take pride in offering
+                    accommodations in the most prime and sought-after locations.
+                </p>
+            </div>
+            <div class="feature_card">
+                <span><i class="ri-close-circle-line"></i></span>
+                <h4>Free Cancellation</h4>
+                <p>
+                    We understand that travel plans can change unexpectedly, which is
+                    why we offer the flexibility of free cancellation.
+                </p>
+            </div>
+            <div class="feature_card">
+                <span><i class="ri-wallet-line"></i></span>
+                <h4>Payment Options</h4>
+                <p>
+                    Our hotels booking website offers a range of convenient Payment
+                    options to suit your preferences mainly at the hotel.
+                </p>
+            </div>
+            <div class="feature_card">
+                <span><i class="ri-coupon-line"></i></span>
+                <h4>Special Offers</h4>
+                <p>
+                    Whether you're planning a romantic getaway, or a business trip, our carefully
+                     curated special offers cater to all your needs.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section_container news_container" id="news">
+        <div class="news-header">
+            <div>
+                <p class="section_header">BLOG</p>
+                <h2 class="section_header">News Feeds</h2>
+            </div>
+        </div>
+        <div class="news_grid">
+            <div class="news_card">
+                <img src="images/gallery12.jpeg" alt="news">
+                <div class="news_card_title">
+                    <p>25th June 2024</p>
+                    <p>By Narcisse</p>
+                </div>
+                <h4>Exploring Local Culinary Gems: A Foodie's Guide.</h4>
+                <p>
+                    Join Narcisse as he takes you on a gastronomic adventure through the
+                    neighborhood surrounding a hotel.
+                </p>
+            </div>
+            <div class="news_card">
+                <img src="images/news-2.jpg" alt="news">
+                <div class="news_card_title">
+                    <p>15th May 2021</p>
+                    <p>By David</p>
+                </div>
+                <h4>Balancing Mind, Body and Soul at our Website.</h4>
+                <p>
+                    Discover holistic spa treatments, fitness facilities and
+                    mindfulness practices that will leave you feeling refreshed.
+                </p>
+            </div>
+            <div class="news_card">
+                <img src="images/news-3.jpg" alt="news">
+                <div class="news_card_title">
+                    <p>05th December 2023</p>
+                    <p>By Eric</p>
+                </div>
+                <h4>Exploring outdoor Activities Near hotels.</h4>
+                <p>
+                    From hiking and biking trails to water sports and wildlife
+                    encounters, he highlights ways to experience nature's wonders.
+                </p>
+            </div>
+            <div class="news_card">
+                <img src="images/gallery-5.jpg" alt="news">
+                <div class="news_card_title">
+                    <p>11th October 2019</p>
+                    <p>By Daniel</p>
+                </div>
+                <h4>Exploring serene sunset retreat.</h4>
+                <p>
+                    Hotels gallery exudes luxury and tranquility with wooden loungers and white umbrellas facing the calm sea, complemented by an infinity pool.
+                </p>
+            </div>
+            <div class="news_card">
+                <img src="images/gallery-2.jpg" alt="news">
+                <div class="news_card_title">
+                    <p>19th April 2015</p>
+                    <p>By Richard</p>
+                </div>
+                <h4>Exploring twilight poolside elegance.</h4>
+                <p>
+                    An outdoor residential pool area comes to life at twilight, featuring a central swimming pool with black sun loungers and a cozy seating area.
+                </p>
+            </div>
+            <div class="news_card">
+                <img src="images/Untitled.jpg" alt="news">
+                <div class="news_card_title">
+                    <p>28th July 2012</p>
+                    <p>By Joshua</p>
+                </div>
+                <h4>Modern monochrome majesty.</h4>
+                <p>
+                    The lobby modern and sleek interior boasts clean lines, a monochromatic color scheme, and contemporary furniture with Curved architectural elements.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="hotel_container" id="hotel">
+        <p class="section_subheader">THE MOST POPULAR HOTELS</p>
+        <h2 class="section_header">Make Your Choice</h2>
+        <div class="hotel_grid">
+            <div class="hotel_card">
+                <a href="page2.html"><img src="images/hotel1.jpg" alt="hotel"></a>
+                <div class="hotel_card_details">
+                    <div>
+                        <h4>POUSGA HOTEL</h4>
+                        <span><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="hotel_card">
+                <a href="page3.html"><img src="images/hotel2.jpg" alt="hotel"></a>
+                <div class="hotel_card_details">
+                    <div>
+                        <h4>BENEBSOUKA HOTEL</h4>
+                        <span><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="hotel_card">
+                <a href="page4.html"><img src="images/hotel3.jpg" alt="hotel"></a>
+                <div class="hotel_card_details">
+                    <div>
+                        <h4>SPLENDIDE HOTEL</h4>
+                        <span><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="hotel_card">
+                <a href="page5.html"><img src="images/hotel4.jpg" alt="hotel"></a>
+                <div class="hotel_card_details">
+                    <div>
+                        <h4>DIMA HOTEL</h4>
+                        <span><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hotel_card">
+                <a href="page6.html"><img src="images/hotel5.jpg" alt="hotel"></a>
+                <div class="hotel_card_details">
+                    <div>
+                        <h4>EXCELLENCE HOTEL</h4>
+                        <span><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="hotel_card">
+                <a href="page7.html"><img src="images/hotel6.jpg" alt="hotel"></a>
+                <div class="hotel_card_details">
+                    <div>
+                        <h4>RAMONGWENDE HOTEL</h4>
+                        <span><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <div class="section_container footer_container">
+            <div class="footer-col">
+                <div class="logo footer_logo">
+                    <div><img src="images/logo.png" alt="logo"></div>
+                </div>
+                <p class="section_description">
+                    Popular hotel booking sites include Booking.com, Expedia, Hotels.com, and Airbnb, each offering a wide range of accommodation options and additional features tailored to enhance the user experience.
+                </p>
+                <ul class="footer_socials">
+                    <li><a href="#"><i class="ri-youtube-fill"></i></a></li>
+                    <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+                    <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+                    <li><a href="#"><i class="ri-linkedin-fill"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h4>Services</h4>
+                <div class="footer_links">
+                    <li><a href="#">Online Booking</a></li>
+                    <li><a href="#">Room Customization</a></li>
+                    <li><a href="#">Virtual Tours</a></li>
+                    <li><a href="#">Special Offers</a></li>
+                    <li><a href="#">Concierge Services</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                </div>
+            </div>
+            <div class="footer_col">
+                <h4>Contact Us</h4>
+                <div class="footer_links">
+                    <li>
+                        <span><i class="ri-phone-fill"></i></span>
+                        <div>
+                            <h5>Phone Number</h5>
+                            <p>+226 25 25 25 89</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span><i class="ri-record-mail-line"></i></span>
+                        <div>
+                            <h5>Email</h5>
+                            <p>info@hotelsbooking.com</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span><i class="ri-map-pin-2-line"></i></span>
+                        <div>
+                            <h5>Location</h5>
+                            <p>First St. NYC</p>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bar">
+            Copyright @Narcisse 2024 web Design. All rights reserved.
+        </div>
+    </footer>
+
+
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
